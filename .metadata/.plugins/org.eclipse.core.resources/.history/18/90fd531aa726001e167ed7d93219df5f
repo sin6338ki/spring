@@ -1,0 +1,15 @@
+package com.smhrd.boot.controller;
+
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+//spring에서 사용하는 class => 어노테이션 @을 붙여야함
+@RestController
+public class MemberController {
+	
+	//localhost:8089/join으로 요청이 들어왔을 때
+	@PostMapping("/join")
+	public String join() {
+		
+	}
+}

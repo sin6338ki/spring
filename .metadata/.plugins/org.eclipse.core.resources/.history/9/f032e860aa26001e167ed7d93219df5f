@@ -1,0 +1,8 @@
+package com.smhrd.boot.model;
+
+public class AndMember {
+	private String id;
+	private String pw;
+	private String tel;
+	private String birth;
+}

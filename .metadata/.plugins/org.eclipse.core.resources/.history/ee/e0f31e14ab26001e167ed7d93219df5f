@@ -1,0 +1,30 @@
+package com.smhrd.boot.model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Data;
+
+@Entity //JPA가 클래스를 관리할 수 있도록 지정해주는 어노테이션
+@Table(name="andmember2") //생성되는 테이블 이름(메핑할 테이블 이름)
+@Data
+public class AndMember {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name="m_idx")
+	//member 식별자(primary key) -> jpa에서 자동으로 생성
+	//autoIncrement
+	//jpa 사용시 @id 지정 필수
+	//컬럼이름 지정
+	private int mIdx; 
+	
+	private String id;
+	private String pw;
+	private String tel;
+	private String birth;
+}

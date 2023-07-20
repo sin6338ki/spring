@@ -1,0 +1,8 @@
+#포트번호
+server.port = 8089
+#context-root(path) : 부트 사용시에는 부트에 내장된 tomcat 사용 
+#tomcat상 주소 구분, 프로젝트 구분을 위해 사용 => 절대로 중복이 되면 안됨!
+server.servlet.context-path=/
+
+#mysql 설정
+

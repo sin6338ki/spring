@@ -1,0 +1,9 @@
+package com.smhrd.boot.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MemberRepository extends JpaRepository<AndMember, Int> {
+									//<테이블과 매핑할 Object, 기본키의 type>
+}

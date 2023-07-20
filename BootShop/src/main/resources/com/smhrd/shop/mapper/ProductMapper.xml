@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <!-- mapper는 파일이 여러개일 수 있음 이를 구분하기 위해 namespace 작성
+  namespace는 mapper 있는 경로 그대로 작성 -->
+  <mapper namespace="com.smhrd.shop.mapper.ProductMapper">
+  	<select id="productList" resultType="com.smhrd.shop.domain.Product">
+  		select * from product;
+  	</select>
+  	
+  	<select id="productOne" resultType="com.smhrd.shop.domain.Product">
+  		select * from product where pcode = #{pcode}
+  	</select>
+  </mapper>
+  

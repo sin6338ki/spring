@@ -1,0 +1,17 @@
+package com.smhrd.boot.service;
+
+import org.springframework.stereotype.Service;
+
+import com.smhrd.boot.model.AndMember;
+
+@Service
+public class MemberService {
+	
+	public void join(AndMember am) {
+		
+		
+		
+	}
+	
+
+}
